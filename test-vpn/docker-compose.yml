@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  test-vpn:
+    image: ghcr.io/gianlucaceci/test-vpn:latest
+    container_name: test-vpn_app
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1g
+    volumes:
+      - test-vpn_data:/var/lib/app/data
+volumes:
+  test-vpn_data:
+    driver: local
