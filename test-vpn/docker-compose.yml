@@ -1,0 +1,9 @@
+services:
+  test-vpn:
+    image: ghcr.io/gianlucaceci/test-vpn:latest
+    container_name: test-vpn_app
+    restart: unless-stopped
+    mem_limit: 1g
+    cpus: 1.0
+    volumes:
+      - /opt/COPIA/docker-projects/test-vpn/data:/var/lib/app/data
