@@ -13,7 +13,7 @@ docker compose up -d
 - Sistema base: almalinux
 - RAM massima: 1g
 - CPU massima: 1.0
-- Budget gestionale dati persistenti: 20 GB
+- Budget gestionale dati persistenti: 10 GB
 - Dati persistenti host: `/opt/COPIA/docker-projects/test-vpn/data`
 - Percorso dati nel container: `/var/lib/app/data`
 
